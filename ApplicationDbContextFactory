@@ -1,0 +1,7 @@
+public ApplicationDbContext CreateDbContext(string[] args)
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
+            optionsBuilder.UseSomeServer("ConnectionString");
+
+            return new ApplicationDbContext(optionsBuilder.Options);
+        }
