@@ -1,7 +1,10 @@
-public ApplicationDbContext CreateDbContext(string[] args)
+ public class ApplicationDbContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
+    {
+        public ApplicationDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
-            optionsBuilder.UseSomeServer("ConnectionString");
+            optionsBuilder.UseSqlServer("Server=localhost, 1433;Database=WebShopDemo;User Id=sa;Password=JEAlousy01;");
 
             return new ApplicationDbContext(optionsBuilder.Options);
         }
+    }
