@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace WebShopDemo.Core.Data.Common
+namespace YourNamespace
 {
     /// <summary>
     /// Abstraction of repository access methods
