@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System.Linq.Expressions;
 
-namespace WebShopDemo.Core.Data.Common
+namespace YourNameSpace
 {
     /// <summary>
     /// Implementation of repository access methods
