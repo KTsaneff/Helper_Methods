@@ -1,0 +1,9 @@
+ private static bool IsValid(Object obj)
+        {
+            var validationContext = new System.ComponentModel.DataAnnotations.ValidationContext(obj);
+            var validationResult = new List<ValidationResult>();
+
+            bool isValid = Validator.TryValidateObject(obj, validationContext, validationResult, true);
+
+            return isValid;
+        }
